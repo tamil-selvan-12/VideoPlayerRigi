@@ -1,0 +1,41 @@
+.playlist-Container {
+    .playlist{
+        display: flex;
+        height: 120px;
+        column-gap: 12px;
+        padding: 16px;
+        border-bottom: 1px solid #f1f1f1;
+        .video-img {
+           height: 100%;
+           width: 30%;
+           .thumbnail-img{
+            height: 100%;
+            width: 100%;
+           }
+        }
+        .video-info{
+            height: 100%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            padding-bottom: 8px;
+            .video-title{
+                font-weight: 900;
+            }   
+            .video-description{
+                height: calc(100% - 30px);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: initial;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    .playlist-Label{
+        background-color: #f1f1f1;
+        color: #0f0f0f;
+    }
+}
